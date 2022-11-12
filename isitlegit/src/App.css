@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bar{
+  width: 100vw;
+  height: 10vh;
+  background-color:crimson;
+  color: white;
+  font-size: 8vmin;
+  font-display:inherit;
+  float: right;
+}
+
+.barImage{
+  padding-left: 1vw;
+  height: 10vh;
+  float: left;
+}
+
+.barText{
+  padding-left: 5vmin;
+}
+
+.sideBar{
+  height: 90vh;
+  width: 15vw;
+  background-color: cadetblue;
+  color: aliceblue;
+  font-size: 2vw;
+  padding-left: 0.1vw;
+  float: left;
+}
+.tab{
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 3vh;
+}
+
+.tab img{
+  height: 2.5vh;
+  padding-right: 3vh;
+}
+
+div.tab:hover {
+  box-shadow: 0 0 2px 1px rgba(28, 0, 186, 0.5);
+}
+
+.mainDisplay {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgray;
+}
+
+.titleText {
+  text-indent: 1vw;
+  font-size: 4vh;
+}
+
+.contentText {
+  text-indent: 1vw;
+  font-size: 3vh;
+}
+
+.signIn {
+  background-color: lightgray;
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.5vw;
+}
+
+.signInPage {
+  margin-left: 1vw;
+}
+
+.searchBox {
+  height: 2vw;
+  width: 12vw;
+  font-size: 1vw;
+  background-color: lightsteelblue;
+  margin-left: 1vw;
+}
+
+.searchField{
+  display: flex;
+}
+
+.searchButton {
+  height: 2vw;
+  width: 2vw;
+  margin-left: 0.1vw;
+  background-image: url("images/searchIcon.png");
+  background-size: 1vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+}

@@ -3,7 +3,7 @@ import Tab from "./Tab";
 
 
 export default function SideBar(input){
-    
+
     return(
         <>
             <div className="sideBar">
@@ -11,13 +11,13 @@ export default function SideBar(input){
                 <Tab tabName="Social Media Post"/>
                 </div>
                 <div onClick={() => input.setState("Survey")}>
-                <Tab tabName="Survey"/>
+                <Tab tabName="Survey" />
                 </div>
                 <div onClick={() => input.setState("Review")}>
                 <Tab tabName="Review"/>
                 </div> <div onClick={() => input.setState("TrackSentiment")}>
                 <Tab tabName="Sentiment Tracker"/>
-                </div>               
+                </div>
             </div>
         </>
     )

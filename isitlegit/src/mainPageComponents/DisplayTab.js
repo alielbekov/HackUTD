@@ -1,25 +1,22 @@
 import React from "react";
-import Home from "./differentDisplays/Home"
-import Goals from "./differentDisplays/Goals"
-import Teams from "./differentDisplays/Teams"
-import Settings from "./differentDisplays/Settings"
-import MyEvents from "./differentDisplays/MyEvents";
+import Review from "./differentDisplays/Review";
+import SocialMedia from "./differentDisplays/SocialMedia";
+import Survey from "./differentDisplays/Survey";
+import TrackSentiment from "./differentDisplays/TrackSentiment";
 
 export default function DisplayTab(currTab){
     // delegate display to show
     // make css, such as the content tab's css, and css for individual tabs
     function show (currState){
         switch(currState){
-            case "Home": 
-                return <Home userinfo={currTab.userInfo}/>
-            case "Goals": 
-                return <Goals userinfo={currTab.userInfo}/>
-            case "Teams": 
-                return <Teams userinfo={currTab.userInfo}/>
-            case "Events": 
-                return <MyEvents userinfo={currTab.userInfo}/>
-            case "Settings": 
-                return <Settings userinfo={currTab.userInfo}/>
+            case "SocialMedia": 
+                return <SocialMedia />
+            case "Survey": 
+                return <Survey />
+            case "Review": 
+                return <Review />
+            case "TrackSentiment": 
+                return <TrackSentiment />
             default: return "Error in displaying tab"
         }
     }

@@ -28,6 +28,10 @@ code {
   float: left;
 }
 
+.barImage image {
+  background-color: white;
+}
+
 .barText{
   padding-left: 5vmin;
 }

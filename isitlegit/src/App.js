@@ -5,7 +5,7 @@ import DisplayTab from './mainPageComponents/DisplayTab';
 import React from 'react';
 
 function App() {
-  let [currState, setState] = React.useState("Home");
+  let [currState, setState] = React.useState("TrackSentiment");
   return(
     <div>
       <TopBar />

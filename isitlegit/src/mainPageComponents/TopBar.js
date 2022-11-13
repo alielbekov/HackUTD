@@ -3,8 +3,8 @@ import logo from "../images/logo.png"
 export default function TopBar(){
     return(
         <div className="bar">
-            <img src={logo} className="barImage" alt="logo" height={100} />
-            <span className="barText">CBRE</span> 
+        <span className="barText" style={{fontFamily:"wagamama", fontWeight:"10"}}>CBRE</span>
+        <img src={logo} className="barImage" alt="logo" height={100} />
         </div>
     )
 }

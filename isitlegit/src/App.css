@@ -13,9 +13,10 @@ code {
 }
 
 .bar{
+  vertical-align: middle;
   width: 100vw;
-  height: 10vh;
-  background-color:#006A4D;
+  height: 12vh;
+  background-color:#012a2d;
   color: white;
   font-size: 8vmin;
   font-display:inherit;
@@ -24,6 +25,7 @@ code {
 
 .barImage{
   padding-left: 1vw;
+  padding-top: 1vw;
   height: 10vh;
   float: left;
 }
@@ -37,9 +39,9 @@ code {
 }
 
 .sideBar{
-  height: 90vh;
+  min-height: 90vh;
   width: 15vw;
-  background-color: #006A4D;
+  background-color: #012a2d;
   color: aliceblue;
   font-size: 1.2vw;
   padding-left: 0.1vw;
@@ -90,11 +92,18 @@ div.tab:hover {
   margin: auto;
   padding: 0;
 }
+
+
+.card-body{
+  margin: 2px;
+  border: solid 2px green;
+  border-radius: 10px;
+}
 .social-media-main-container a{
-    color: #006A4D;
+    color: #012a2d;
 }
 .social-media-main-container a:hover{
-  color: black;
+  color: #023020;
 
 }
 

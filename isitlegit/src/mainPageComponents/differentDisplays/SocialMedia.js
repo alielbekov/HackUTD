@@ -11,9 +11,9 @@ export default function Home(){
             </div>
 
             <section style={{ backgroundColor: ""}}>
-                <div className="social-media-main-container">
-                    <div className="row d-flex justify-content-center">
-                      <div className="">
+                <div className="social-media-main-container ">
+                    <div className="row d-flex justify-content-center ">
+                      <div className="m-3 wrapper">
                         <div className="card">
                           <div className="card-body">
                             <div className="d-flex flex-start align-items-center">

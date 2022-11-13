@@ -13,13 +13,10 @@ export default function Home(){
 
             <span class="checked">✭</span>
             <span onClick={() => (setRatingTwo(true), setRatingThree(false), setRatingFour(false), setRatingFive(false))}>✭</span>
-            <div class="container">
-            <span id="rateMe1"></span>
-            </div>
             <div>Any Additional Comments: </div>
             <textarea id="comments" className="textarea"/>
             <br />
-            <button class="btn btn-primary postButton" > Submit </button> 
+            <button class="btn btn-primary postButton" > Submit </button>
             {/* onClick = {() => goToStart()} */}
             <br />
             {/* <button onClick={() => validateSignIn()}>Click to sign in</button> */}

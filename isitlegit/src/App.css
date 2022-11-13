@@ -25,8 +25,8 @@ code {
 
 .barImage{
   padding-left: 1vw;
-  padding-top: 1vw;
-  height: 10vh;
+  padding-top: 1vh;
+  height: 9vh;
   float: left;
 }
 
@@ -39,7 +39,7 @@ code {
 }
 
 .sideBar{
-  min-height: 90vh;
+  height: 93vh;
   width: 15vw;
   background-color: #012a2d;
   color: aliceblue;
@@ -63,7 +63,7 @@ div.tab:hover {
 }
 
 .mainDisplay {
-  height: 100vh;
+  height: 105vh;
   width: 100vw;
   background-color: lightgray;
 }
@@ -113,14 +113,14 @@ div.tab:hover {
 }
 
 .nameInput {
-  width: 60vw;
+  width: 80vw;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
 
 .textarea {
-  width: 60vw;
+  width: 80vw;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;

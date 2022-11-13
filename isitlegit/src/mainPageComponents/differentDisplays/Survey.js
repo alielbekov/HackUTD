@@ -1,37 +1,120 @@
 import React from "react";
 
 export default function Home(){
-    let [rating, setRatingOne] = React.useState(0)
-
     return(
-      <div className="row d-flex justify-content-center ">
-      <div className = "surveyWrapper  m-3 p-3 my-3">
-            <div className="surveyInput">
-                <div>What is your Name: </div>
-                <input type="text" id="name" className="nameInput" />
-                <div>Leave a Rating:</div>
-                <br />
+      <div>
 
-                {/*}<span class="checked">✭</span>
-                <span onClick={() => (setRatingTwo(true), setRatingThree(false), setRatingFour(false), setRatingFive(false))}>✭</span> */}
-                <div>
-                <span class="surveyInputValue">0</span>
-                <span class="surveyInputValue">1</span>
-                <span class="surveyInputValue">2</span>
-                <span class="surveyInputValue">3</span>
-                <span class="surveyInputValue">4</span>
-                <span>5</span>
-                </div>
-                <input className = "isInput" type="range" min="0" max="5" />
-                <div>Any Additional Comments: </div>
-                <textarea id="comments" className="textarea"/>
-                <br />
-                <button className="btn btn-success postButton" > Submit </button>
-                {/* onClick = {() => goToStart()} */}
-                <br />
-                {/* <button onClick={() => validateSignIn()}>Click to sign in</button> */}
+      <table className="table survey-table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th />
+                <th className="text-center">
+                  Strongly disagree
+                  <br />
+                </th>
+                <th className="text-center">
+                  Disagree
+                  <br />
+                </th>
+                <th className="text-center">
+                  Uncertain
+                  <br />
+                </th>
+                <th className="text-center">
+                  Agree
+                  <br />
+                </th>
+                <th className="text-center">
+                  Strongly agree
+                  <br />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                  Are you satisfied with our service?
+                </th>
+                <td><input type="radio" name="q1"/></td>
+                <td><input type="radio" name="q1"/></td>
+                <td><input type="radio" name="q1"/></td>
+                <td><input type="radio" name="q1"/></td>
+                <td><input type="radio" name="q1"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                Do you think we are doing better than our competitors?
+                </th>
+                <td><input type="radio" name="q2"/></td>
+                <td><input type="radio" name="q2"/></td>
+                <td><input type="radio" name="q2"/></td>
+                <td><input type="radio" name="q2"/></td>
+                <td><input type="radio" name="q2"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                Have you been looking for real estate for a long time?
+                </th>
+                <td><input type="radio" name="q3"/></td>
+                <td><input type="radio" name="q3"/></td>
+                <td><input type="radio" name="q3"/></td>
+                <td><input type="radio" name="q3"/></td>
+                <td><input type="radio" name="q3"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                Did the property always match the description we provided?
+                </th>
+                <td><input type="radio" name="q4"/></td>
+                <td><input type="radio" name="q4"/></td>
+                <td><input type="radio" name="q4"/></td>
+                <td><input type="radio" name="q4"/></td>
+                <td><input type="radio" name="q4"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                Was the broker well informed about the property?
+                </th>
+                <td><input type="radio" name="q5"/></td>
+                <td><input type="radio" name="q5"/></td>
+                <td><input type="radio" name="q5"/></td>
+                <td><input type="radio" name="q5"/></td>
+                <td><input type="radio" name="q5"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                Did you constantly receive additional information handouts about the properties viewed?
+                </th>
+                <td><input type="radio" name="q6"/></td>
+                <td><input type="radio" name="q6"/></td>
+                <td><input type="radio" name="q6"/></td>
+                <td><input type="radio" name="q6"/></td>
+                <td><input type="radio" name="q6"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                 You do your think sales commission was charged at a reasionable amount?</th>
+                <td><input type="radio" name="q7"/></td>
+                <td><input type="radio" name="q7"/></td>
+                <td><input type="radio" name="q7"/></td>
+                <td><input type="radio" name="q7"/></td>
+                <td><input type="radio" name="q7"/></td>
+              </tr>
+              <tr>
+                <th className="text-nowrap" scope="row">
+                Are you likely to recommend us to a friend or a collegue?
+                </th>
+                <td><input type="radio" name="q8"/></td>
+                <td><input type="radio" name="q8"/></td>
+                <td><input type="radio" name="q8"/></td>
+                <td><input type="radio" name="q8"/></td>
+                <td><input type="radio" name="q8"/></td>
+              </tr>
+
+            </tbody>
+          </table>
+            <button type="button" className = "btn btn-success postButton survey-button">Submit</button>
           </div>
-      </div>
-      </div>
+
     )
 }

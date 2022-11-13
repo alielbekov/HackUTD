@@ -154,7 +154,7 @@ div.tab:hover {
   font-size: 16px;
   background-color: white;
   /* background-image: url('searchicon.png'); */
-  background-position: 10px 10px; 
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px;
 }
@@ -167,20 +167,43 @@ div.tab:hover {
   font-size: 16px;
   background-color: white;
   /* background-image: url('searchicon.png'); */
-  background-position: 10px 10px; 
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 24px;
   margin-left: 1vw;
 }
 
 .chart{
-  height: 30vh;
-  width: 30vw;
+  background-color: white;
+  position: absolute;
+  padding: 2em;
+  left: 15vw;
+  top: 12vh;
+  height: auto;
+  width: 60vw;
 }
 
 .surveyInputValue{
   margin-right: 15.2vw;
 }
-.surveyWrapper{
-  
+.survey-table{
+  background-color: white;
+  position: absolute;
+  padding: 2em;
+  left: 15vw;
+  top: 12vh;
+  height: auto;
+  max-width: 85vw;
+}
+.survey-table tr:nth-child(even) {
+  background-color:  #004d00
+;
+  color: white;
+;
+}
+.survey-button{
+  position: absolute;
+  left: 15vw;
+  top: 64vh;
+  width: 85vw;
 }

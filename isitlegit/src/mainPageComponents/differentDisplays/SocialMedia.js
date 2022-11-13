@@ -9,13 +9,6 @@ export default function Home(){
 
     return(
         <div className="social-media-main">
-            <div className="titleText">
-                {/* User Tag: @username123 */}
-                {/* Comment: _Comment Here_ */}
-                {/* Post: <button>post to backend</button> */}
-
-            </div>
-
             <section style={{ backgroundColor: ""}}>
                 <div className="social-media-main-container ">
                     <div className="row d-flex justify-content-center ">
@@ -139,6 +132,7 @@ export default function Home(){
                       </div>
                     </div>
                     </div>
+                    
               </section>
 
         </div>

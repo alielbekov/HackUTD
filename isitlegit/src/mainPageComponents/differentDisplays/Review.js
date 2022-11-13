@@ -1,15 +1,37 @@
 import React from "react";
 export default function Home(){
-    
     return(
-        <div>
-            <div className="titleText">
-                {/* Name: _Name_ */}
-                {/* Review: _Company Under_*/}
-                {/* Rating (Stars out of 5): _Rating_ */}
-                {/* Comment: _Comment Here_ */}
-                {/* Post: <button>post to backend</button> */}
-            </div>
-        </div>
+      <div className="row d-flex justify-content-center ">
+      <div className = "surveyWrapper  m-3 p-3 my-3">
+            <div className="surveyInput">
+                <div>What is your name: </div>
+                <input type="text" id="name" className="nameInput" />
+                <div>Leave a rating:</div>
+                <br />
+
+                {/*}<span class="checked">✭</span>
+                 <span onClick={() => (setRatingTwo(true), setRatingThree(false), setRatingFour(false), setRatingFive(false))}>✭</span> */}
+
+                <div>
+                <span className="surveyInputValue">0</span>
+                <span className="surveyInputValue">1</span>
+                <span className="surveyInputValue">2</span>
+                <span className="surveyInputValue">3</span>
+                <span className="surveyInputValue">4</span>
+                <span>5</span>
+                </div>
+                <input className = "isInput" type="range" min="0" max="5" />
+                <br />
+
+                <div>Your review here: </div>
+                <textarea id="comments" className="textarea"/>
+                <br />
+                <button className="btn btn-success postButton" > Submit </button>
+                {/* onClick = {() => goToStart()} */}
+                <br />
+                {/* <button onClick={() => validateSignIn()}>Click to sign in</button> */}
+          </div>
+      </div>
+      </div>
     )
 }

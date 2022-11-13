@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Home(){
     return(
       <div>
@@ -113,7 +114,7 @@ export default function Home(){
 
             </tbody>
           </table>
-            <button type="button" className = "btn btn-success postButton survey-button">Submit</button>
+            <button type="button" onClick={()=>{ alert('Thank you for submitting the survey!'); }} className = "btn btn-success postButton survey-button" >Submit</button>
           </div>
 
     )

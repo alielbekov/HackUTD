@@ -119,7 +119,7 @@ export default function Home(){
                               </div>
                             </div>
                             <div className="float-end mt-2 pt-1">
-                              <button type="button" className="btn btn-success btn-sm">
+                              <button type="button" onClick={()=>{ alert('Thank you for leaving a comment!'); }} className="btn btn-success btn-sm">
                                 Post comment
                               </button>
                               &nbsp;&nbsp;&nbsp;
@@ -132,7 +132,7 @@ export default function Home(){
                       </div>
                     </div>
                     </div>
-                    
+
               </section>
 
         </div>

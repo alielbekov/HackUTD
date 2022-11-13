@@ -26,12 +26,14 @@ export default function Home(){
                 <div>Your review here: </div>
                 <textarea id="comments" className="textarea"/>
                 <br />
-                <button className="btn btn-success postButton" > Submit </button>
+                <button className="btn btn-success postButton" onClick={()=>{ alert('Thank you for submitting your reviews!'); }}> Submit </button>
                 {/* onClick = {() => goToStart()} */}
                 <br />
                 {/* <button onClick={() => validateSignIn()}>Click to sign in</button> */}
           </div>
       </div>
+
+
       </div>
     )
 }

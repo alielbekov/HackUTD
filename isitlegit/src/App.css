@@ -71,6 +71,7 @@ div.tab:hover {
 .titleText {
   text-indent: 1vw;
   font-size: 4vh;
+  justify-content: center;
 }
 
 .contentText {
@@ -139,4 +140,36 @@ div.tab:hover {
 .postButton {
   width: 80vw;
   background-color: #006A4D;
+}
+
+.search {
+  width: 83vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  /* background-image: url('searchicon.png'); */
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px;
+}
+
+.searchButton {
+  width: 83vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  /* background-image: url('searchicon.png'); */
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 24px;
+  margin-left: 1vw;
+}
+
+.chart{
+  height: 30vh;
+  width: 30vw;
 }

@@ -82,6 +82,18 @@ div.tab:hover {
 .signInPage {
   margin-left: 1vw;
 }
+.social-media-main-container{
+  margin: auto;
+  padding: 0;
+}
+.social-media-main-container a{
+    color: #006A4D;
+}
+.social-media-main-container a:hover{
+  color: black;
+
+}
+
 
 /* .searchBox {
   height: 2vw;

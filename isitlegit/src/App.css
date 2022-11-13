@@ -177,10 +177,13 @@ div.tab:hover {
   background-color: white;
   position: absolute;
   padding: 2em;
-  left: 15vw;
-  top: 12vh;
-  height: auto;
-  width: 60vw;
+  left: 30vw;
+  top: 40vh;
+  height: 40vh;
+  width: 50vw;
+  
+  /* height: auto; */
+  /* width: 60vw; */
 }
 
 .surveyInputValue{

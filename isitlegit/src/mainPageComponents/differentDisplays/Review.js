@@ -1,4 +1,5 @@
 import React from "react";
+import {Response} from "../responseMessage.js"
 export default function Home(){
     return(
       <div className="row d-flex justify-content-center ">
@@ -31,6 +32,7 @@ export default function Home(){
                 <br />
                 {/* <button onClick={() => validateSignIn()}>Click to sign in</button> */}
           </div>
+          <Response polarity = {"Hello"} />
       </div>
 
 

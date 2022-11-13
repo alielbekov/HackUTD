@@ -82,7 +82,7 @@ export default function Home(){
                               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                               enim ad minim veniam, quis nostrud exercitation ullamco laboris
                               nisi ut aliquip consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                              eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
                             <div className="small d-flex justify-content-end">
                               <a href="#!" className="d-flex align-items-center me-3">
@@ -130,7 +130,7 @@ export default function Home(){
                                 Post comment
                               </button>
                               &nbsp;&nbsp;&nbsp;
-                              <button type="button" onClick = ""className="btn btn-outline-success btn-sm">
+                              <button type="button" className="btn btn-outline-success btn-sm">
                                 Cancel
                               </button>
                             </div>

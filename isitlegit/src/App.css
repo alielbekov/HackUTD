@@ -104,7 +104,11 @@ div.tab:hover {
 }
 .social-media-main-container a:hover{
   color: #023020;
+}
 
+.isInput{
+  color: green;
+  width: 80vw;
 }
 
 
@@ -139,4 +143,8 @@ div.tab:hover {
 .postButton {
   width: 80vw;
   background-color: #006A4D;
+}
+
+.surveyInputValue{
+  margin-right: 15.2vw;
 }

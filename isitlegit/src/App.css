@@ -59,7 +59,7 @@ code {
 }
 
 div.tab:hover {
-  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 2px 1px #006A4D;
 }
 
 .mainDisplay {
@@ -108,26 +108,35 @@ div.tab:hover {
 }
 
 
-/* .searchBox {
-  height: 2vw;
-  width: 12vw;
-  font-size: 1vw;
-  background-color: lightsteelblue;
-  margin-left: 1vw;
+.checked {
+  color: orange;
 }
 
-.searchField{
-  display: flex;
+.nameInput {
+  width: 60vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
-.searchButton {
-  height: 2vw;
-  width: 2vw;
-  margin-left: 0.1vw;
-  background-image: url("images/searchIcon.png");
-  background-size: 1vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  display: flex;
-} */
+.textarea {
+  width: 60vw;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.surveyInput {
+  justify-content: center;
+  display: grid;
+}
+
+.postButton {
+  width: 80vw;
+  background-color: #006A4D;
+}

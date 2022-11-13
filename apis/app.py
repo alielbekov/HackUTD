@@ -2,6 +2,7 @@ import json, nltk
 # nltk.download('omw-1.4')
 from flask import Flask, jsonify, request, abort
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from flask_cors import CORS, cross_origin
 from unidecode import unidecode
 
 app = Flask(__name__)
@@ -230,6 +231,7 @@ def clean_lemma (sent):
 
 
 @app.route('/getSentiment', methods=['POST'])
+@cross_origin()
 def query_records():
     if not request.json or not 'comment' in request.json:
         abort(400)
@@ -269,9 +271,9 @@ def query_records():
     positive_score = len(positiveWordsMatched)*100/len(positiveSet)
     negative_score = len(negativeWordsMatched)*100/len(negativeSet)
     polarity = ''
-    if score > -0.4:
+    if score < -0.4:
         polarity = "TERRIBLE"
-    elif score > -0.1:
+    elif score < -0.1:
         polarity = "BAD"
     elif score < 0.1:
         polarity = "NEUTRAL"

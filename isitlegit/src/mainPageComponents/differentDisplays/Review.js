@@ -9,6 +9,29 @@ export default function Home(){
   let [positive, setPositive] = React.useState(80)
   let [negative, setNegative] = React.useState(20)
 
+  function postReview(){
+    fetch("http://127.0.0.1:5000/getSentiment", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({'comment': document.getElementById("comments").value})
+    })
+      .then(data => data.json())
+      .then((data) => {
+          if(data.message == "Success!"){
+            alert(data.polarity);
+          }else{
+              alert("Polarity: "+data.polarity + '\n' + "Most common words: " + data.common_matched_words
+              + "\n" + "Message length: " + data.length + "\n" + "Negative match score: " + data.negative_match + "\n" + "negative_match_words: " +  data.positive_match);
+          }
+      })
+      .catch((error) => {
+        console.log(error.data);
+        console.log("error!")
+      })
+      }
+
   function calcValues(){
     // setPositive(document.getElementById("rangeInput"))
     // let input = document.getElementById("comments").value
@@ -44,7 +67,7 @@ export default function Home(){
                 <div>Your review here: </div>
                 <textarea id="comments" className="textarea"/>
                 <br />
-                <button className="btn btn-success postButton" onClick={()=>{ calcValues(); alert('Thank you for submitting your reviews!'); }}> Submit </button>
+                <button className="btn btn-success postButton" onClick={()=>{ postReview(); }}> Submit </button>
                 {/* onClick = {() => goToStart()} */}
                 <br />
                 {/* <button onClick={() => validateSignIn()}>Click to sign in</button> */}
